@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/Android.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+  
+    :root {
+        --cor0: #c5ebd6;
+        --cor1: #83e1ad;
+        --cor2: #3ddc84;       
+        --cor3: #2fa866;
+        --cor4: #1a5c37;
+        --cor5: #063d1e;
+
+        --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
+        --fontedestaque: 'Bebas Neue', cursive;
+        --fonteandroid: 'Android', cursive;
+
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        margin: auto;
+    }
+    body{
+        background-color: var(--cor0);
+        font-family: var(--fontepadrao);
+        padding: auto;
+    }
+
+    body h2{
+        font-family: var(--fonteandroid);
+    }
+
+    header{
+        background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+        text-align: center;
+        border: 50px;
+
+    }
+
+    header > h1 {
+        color:white;
+        font-family: var(--fontedestaque);
+        font-size: 100px;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.136);
+        font-weight: normal;
+        
+        
+    }
+    header p{
+        color: white;
+        text-shadow: 2px 5px 7px rgba(0, 0, 0, 0.31);
+        font-family: var(--fontepadrao);
+        font-weight: bold;
+        margin-bottom: 50px;
+        max-width: 600px;
+        font-family:var(--fontepadrao);
+        padding-left: 10px;
+        padding-right: 10px;
+        
+
+    }
+
+    main > p{
+        line-height: 1.5em;
+        text-align: justify;
+        text-indent: 30px;
+    
+    }
+
+    main strong{
+        background-color: #83e1ad;
+        font-weight: bold;
+        color: var(--cor5);
+
+    }
+
+    main a { 
+        text-decoration: none;
+        font-weight: bold;
+        color: #1a5c37;
+    }
+
+    nav{
+        background-color: var(--cor5);
+        box-shadow: 7px 5px 3px rgba(0, 0, 0, 0.26);
+        color: white;
+        padding-top: 5px;
+        display: block;
+        margin: auto;
+    }
+
+    nav a:hover{
+    background-color: #3ddc84;
+    color: #063d1e;
+    border-radius: 5px;
+    }
+
+    nav a{
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    main{
+        background-color: white;
+        box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.412);
+        margin: auto;
+        min-width: 320px;
+        max-width: 1000px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    main h1{
+        font-family: var(--fonteandroid);
+         color: black;
+        background-image: -moz-repeating-linear-gradient(to right, var(--cor3), var(--cor0));
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    main h2{
+        font-family: var(--fonteandroid);
+         color: black;
+    background-image: -moz-repeating-linear-gradient(to right, var(--cor3), var(--cor0));
+        font-weight: normal;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    aside{
+        background-color: #3ddc85a3;
+        padding: 5px;
+       border-radius: 10px;
+        box-shadow: 10px, rgba(0, 0, 0, 0.46);
+        
+    
+    }
+
+    aside ul { 
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+    }
+
+    aside h3{
+
+    color: black;
+    background-image: -moz-repeating-linear-gradient(to right, var(--cor3), var(--cor0));
+    margin-top: -4.9px;
+    border-radius: 5px;
+    padding-left: 8px;
+    margin: -5px;
+    }
+    
+    
+    main img.pequena {
+        width: 50%;
+        margin: auto;
+        display:block;
+        text-align: center;
+        
+     }
+
+footer{
+    background-color:black;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}    
+
+picture {
+display: block;
+text-align: center;
+}
+
+div.video{
+    background-color: #1a5c37;
+    margin: 10px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 59%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+div.video > iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+
+}
+
